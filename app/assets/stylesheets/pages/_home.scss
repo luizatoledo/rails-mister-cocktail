@@ -10,18 +10,20 @@
   grid-gap: 16px;
 }
 
-.cocktail-img{
+.cocktail-card{
   border-radius: 8px;
   box-shadow: 3px 3px rgb(224, 223, 223);
+  width: 350px;
+  height: 200px;
 }
 
 .cocktail-name{
-  color: #b5838d;
+  color: white;
   padding: 3px;
   font-size: 24px;
   &:hover{
     text-decoration: none;
-    color: #5f0f40;
+    color: lightgrey;
   }
 }
 
