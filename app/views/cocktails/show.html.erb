@@ -12,6 +12,14 @@
       </li>
     <% end %>
   </ul>
-  <p><%= link_to "Add new dose to this cocktail", new_cocktail_dose_path(@cocktail) %></p>
+
+  <div class="new-dose-form">
+    <h2>Add new dose </h2>
+    <%= simple_form_for [@cocktail, @dose] do |f| %>
+      <%= f.input :description %>
+      <%= f.association :ingredient %>
+      <%= f.submit %>
+    <% end %>
+  </div>
   <p><%= link_to "Back to cocktail list", cocktails_path %></p>
 </div>
