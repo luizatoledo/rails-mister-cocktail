@@ -1,0 +1,12 @@
+<div class="container">
+  <h1 class="title text-center">Mister Cocktail</h1>
+  <div class="cocktails">
+    <% @cocktails.each do |cocktail| %>
+      <div class="cocktail-card d-flex flex-column align-items-center">
+        <%= link_to cocktail.name, cocktail_path(cocktail), class: "cocktail-name" %>
+        <%= image_tag "soda_italiana.jpg", alt: "Soda Italiana", width: 200, class:"cocktail-img" %>
+      </div>
+    <% end %>
+  </div>
+  <%= link_to "New Cocktail", new_cocktail_path %>
+</div>

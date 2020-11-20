@@ -1,0 +1,26 @@
+// Specific CSS for your home-page
+.title{
+  font-family: 'Pacifico', cursive;
+  color: #e5989b
+}
+
+.cocktails{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+}
+
+.cocktail-img{
+  border-radius: 8px;
+  box-shadow: 3px 3px rgb(224, 223, 223);
+}
+
+.cocktail-name{
+  color: #b5838d;
+  padding: 3px;
+  font-size: 24px;
+  &:hover{
+    text-decoration: none;
+    color: #5f0f40;
+  }
+}
